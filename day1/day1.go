@@ -11,11 +11,11 @@ import (
 
 func getInput() [][]int {
 	fname := "inputDay1.txt"
-
-	dir, err := filepath.Abs(filepath.Dir("inputs/"))
+	dir := "/"
+	/*dir, err := filepath.Abs(filepath.Dir("inputs/"))
 	if err != nil {
 		panic(err)
-	}
+	}*/
 
 	b, err := ioutil.ReadFile(filepath.Join(dir, fname))
 	if err != nil {
